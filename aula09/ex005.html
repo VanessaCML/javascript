@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passom com DOM</title>
+    <style>
+        body{
+            background-color: rgb(212, 174, 248);
+            color: rgb(252, 216, 140);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1.2em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.534);
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Javascript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1]
+
+        window.document.write('Está escrito assim:<br> '+p1.innerText)
+        corpo.style.textAlign = 'center'
+        p1.style.color = 'pink'
+        corpo.style.lineHeight = '1.3em'
+        document.write('<br>'+p1.innerHTML)
+
+        var d = window.document.getElementById('msg')
+
+        d.style.background = 'lightpink'
+        d.innerText = 'Estou aguardando...'
+        // OU window.document.getElementByID('msg').innerText = 'Olá, mundo!'
+        
+        var d = window.document.querySelector('div#msg')
+        d.style.color = 'lightblue'
+    </script>
+</body>
+</html>
