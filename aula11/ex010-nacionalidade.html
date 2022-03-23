@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>        
+        body{
+            background-image: url('https://as2.ftcdn.net/v2/jpg/02/11/81/61/1000_F_211816135_zF7NcNk4wqBZyqOso9wdF4QuZcr1uqnj.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            background-color: rgb(7, 112, 3);
+            text-align: center;            
+        }
+
+        h1{
+            background-image: url('https://www.gov.br/mre/pt-br/assuntos/portal-consular/alertas%20e%20noticias/alertas/entrada-de-brasileiros-e-estrangeiros-no-brasil/brasilportaria658.jpg');
+            background-position: center bottom;
+            border-radius: 15px;
+            margin-top: 0;
+            padding: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 3em;
+            color: white;
+        }
+
+        span, input{
+            background-color: aliceblue;
+            padding: 0px 10px;
+            border-radius: 5px;
+            font-size: 4vh;
+            margin-bottom: 40px;
+        }
+
+        #res{            
+            padding: 15px;
+            width: 400px;
+            font-size: 4vh;
+            text-shadow: 2px 2px 5px black;
+            color: white;
+            border-radius: 10px;
+            margin: auto;            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Verificando Nacionalidade</h1>
+    <span>Insira seu país:</span> <input type="text" name="nacionalidade" id="nacionalidade">
+    <input type="button" value="Verificar" id="teste">
+    <div id="res"></div>
+
+    <script>
+        teste.addEventListener('click', verificar)
+        function verificar(){
+            var nac = document.getElementById('nacionalidade').value.toLowerCase()
+            var res = document.getElementById('res')
+            if (nac == 'brasil') {
+                res.style.backgroundColor = 'rgba(13, 102, 5, 0.651)'
+                res.innerHTML = `Você é brasileiro.`
+            } else {
+                res.style.backgroundColor = 'rgba(13, 102, 5, 0.651)'
+                res.innerHTML = `Você é estrangeiro.<br> Seja bem-vindo!`
+            }
+        }
+    </script>
+</body>
+</html>
