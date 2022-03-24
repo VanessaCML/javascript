@@ -1,2 +1,2 @@
-# Projetos em Javascript, HTML5 e CSS3
+# Exercícios e projetos em Javascript, HTML5 e CSS3
  
