@@ -9,7 +9,6 @@
 *{
     margin: 0;
     padding: 0;
-    border: 0;
 }
 
 :root{
@@ -22,15 +21,15 @@
     --cor5fonte: #092a7294;
     --cor1fonte: #ca9e0b;
     --cor2fonte: #073452b9;
-    --font0: 'Playfair Display', display;
+    --font0: 'Playfair Display', serif;
     --font1: 'Quicksand', sans-serif;
     --font2: 'Josefin Sans', sans-serif;
 }
 
 body{
-background-color: rgb(117, 152, 250);
-font-family: Arial, Helvetica, sans-serif;
-font-size: 1em;
+    background-color: rgb(117, 119, 250);
+    font-family: var(--font1);
+    font-size: 1em;
 }
 
 header{
@@ -43,27 +42,28 @@ header{
 }
 
 section{
-background-color: white;
-border-radius: 5px;
-padding: 10px;
-max-width: 500px;
-margin: auto;
-text-align: center;
-margin-bottom: 20px;
-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.171);
-}
-
-.container{
-    height:450px;
-    max-width:500px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.171);
 }
 
 #msg{
     display: block;
     font-family: var(--font1);
-    font-size: 1.5em;
-    line-height: 1.8em;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.253);
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+#botao, #txtn{
+    padding: 2px;
+}
+
+div{
+    text-align: left;
 }
 
 footer{
